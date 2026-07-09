@@ -8,29 +8,29 @@ public class Exe01 {
 		
 		Scanner leia = new Scanner(System.in);
 		
-		int numero1, numero2, numero3, soma;
+		int numeroA, numeroB, numeroC, soma;
 		
-		System.out.println("Digite o primeiro número: ");
-		numero1 = leia.nextInt();
+		System.out.println("Digite o número A: ");
+		numeroA = leia.nextInt();
 		
-		System.out.println("Digite o segundo número: ");
-		numero2 = leia.nextInt();
+		System.out.println("Digite o número B: ");
+		numeroB = leia.nextInt();
 		
-		System.out.println("Digite o terceiro número: ");
-		numero3 = leia.nextInt();
+		System.out.println("Digite o número C: ");
+		numeroC = leia.nextInt();
 		
-		System.out.printf("\nValores digitados: %d, %d, %d", numero1, numero2, numero3);
+		System.out.printf("\nValores digitados: %d, %d, %d", numeroA, numeroB, numeroC);
 		
-		soma = numero1 + numero2;
+		soma = numeroA + numeroB;
 		
-		System.out.printf("\n%d + %d = %d\n", numero1, numero2, numero1 + numero2);
+		System.out.printf("\n%d + %d = %d\n", numeroA, numeroB, numeroA + numeroB);
 		
-		if(soma > numero3) {
-			System.out.println("A soma dos numeros 1 e 2 é maior do que o numero 3");
-		} else if (soma == numero3) {
-			System.out.println("A soma dos numeros 1 e 2 é igual ao numero 3");
+		if(soma > numeroC) {
+			System.out.println("A soma dos números A e B é maior do que o número C");
+		} else if (soma == numeroC) {
+			System.out.println("A soma dos números A e B é igual ao número C");
 		} else {
-			System.out.println("A soma dos numeros 1 e 2 é menor do que o numero 3");
+			System.out.println("A soma dos números A e B é menor do que o número C");
 		}
 		
 		leia.close();
